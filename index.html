@@ -9,15 +9,15 @@
 <body>
     <header>
         <h1>RAW FOODSTORE <br> DELÍCIAS <br> VEGETARIANAS</h1>
-        <nav>
+        <nav class="navegacao-principal">
             <ul>
                 <li><a href="#">INÍCIO</a></li>
                 <li><a href="#">PRODUTOS</a></li>
                 <li><a href="#">COMBOS</a></li>
                 <li><a href="#">SOBRE</a></li>
-                <li><a href="#">CONTATO</a></li>
-                <li><a href="#">busca</a></li>
-                <li><a href="#">carrinho</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
+                <li><button type="button">busca</button></li>
+                <li><button type="button">carrinho</button></li>
             </ul>
             <p>frete grátis em pedidos a partir de R$ 200,00</p>
         </nav>
@@ -25,7 +25,7 @@
     <main>
         <section>
             <h2>COMPRE</h2>
-            <nav>
+            <nav class="categorias-de-produtos">
                 <ul>
                     <li><a href="#">low carb</a></li>
                     <li><a href="#">massas</a></li>
@@ -41,8 +41,8 @@
                 <h3></h3> <!-- nome do produto -->
                 <p></p> <!-- descrição do produto -->
                 <p></p> <!-- preço do produto -->
-                <button></button> <!-- comprar produto  --> 
-                <button></button> <!-- adicionar ao carrinho -->
+                <button type="button"></button> <!-- comprar produto  --> 
+                <button type="button"></button> <!-- adicionar ao carrinho -->
             </article>
             <article>
 
@@ -69,19 +69,25 @@
     </main>
 
     <footer>
-        <h1>RAW <br> FOODSTORE</h1>
+        <p>RAW <br> FOODSTORE</p>
         <h2>receba nossas novidades</h2>
         <p>inscreva-se e receba primeiro nossos lançamentos e promoções</p>
-        <!-- colocar campos de nome, email e botão para cadastrar -->
 
+        <form action="">
+            <label for="nome">seu nome</label>
+            <input type="text" name="" id="nome">
+            <label for="email">seu email</label>
+            <input type="email" name="" id="email">
+        </form>
+        
         <ul>
-            <li><a href="#">sobre nós</a></li>
-            <li><a href="#">contato</a></li>
             <li><a href="#">FAQ</a></li>
+            <li><a href="#">conheça nossa equipe</a></li>
+            <li><a href="#">trabalhe conosco</a></li>
         </ul>
 
         <p>RAW FOODSTORE</p>
-        <p>feito por GQ /// ©2026 - todos os direitos reservados</p>
+        <p>feito por GQ | ©2026 - todos os direitos reservados</p>
     </footer>
 </body>
 </html>
