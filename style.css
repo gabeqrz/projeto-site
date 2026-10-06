@@ -6,7 +6,8 @@ h1{
     font-size: 80px;
     font-weight: bold;
     letter-spacing: -4px;
-    line-height: 65px;
+    line-height: 75px;
+    padding: 5px 5px 20px 5px;
 }
 
 .menu-nav{
@@ -16,9 +17,100 @@ h1{
 
 .menu-list{
     display: flex;
+    flex-wrap: nowrap;
+    justify-content: baseline;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
 }
 
 .item-menu-list{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    font-size: 18px;
+    color: black;
+    border: 0.5px solid #C9C8C5;
+    height: 20px;
+    padding: 6px 22px;
+}
+
+.item-menu-list:hover{
+    color: #FFDD00;
+    background-color: black;
+    font-weight: bold;
+}
+
+.item-menu-button{
+    display: flex;
+    gap: 30px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+    border: 0.5px solid #C9C8C5;
+    padding: 6.8px 38px;
+}
+
+
+.item-menu-button:hover{
+    color: #FFDD00;
+    background-color: black;
+    font-weight: bold;
+}
+
+.menu-banner{
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    border: 0.5px solid transparent;
+    background-color: #FFDD00;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+
+.menu-categorias{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.frase-comprar{
+    font-size: 40px;
+    font-weight: bold;
+    padding: 15px 5px;
+}
+
+.lista-categorias{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.item-categorias{
+    display: flex;
+    flex-wrap: nowrap;
     text-decoration: none;
     color: black;
+    border: 0.5px solid black;
+    align-items: center;
+    font-size: 18px;
+    height: 20px;
+    padding: 6px 14px;
+}
+
+.item-categorias:hover{
+    color: #FFDD00;
+    background-color: black;
+    font-weight: bold;
 }
