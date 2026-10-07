@@ -21,7 +21,7 @@ h1{
     justify-content: baseline;
     align-items: center;
     width: 100%;
-    padding: 0;
+    padding: 5px 0;
     margin: 0;
     gap: 30px;
 }
@@ -45,7 +45,7 @@ h1{
 
 .item-menu-button{
     display: flex;
-    gap: 30px;
+    gap: 10px;
     border: none;
     margin: 0;
     padding: 0;
@@ -113,4 +113,53 @@ h1{
     color: #FFDD00;
     background-color: black;
     font-weight: bold;
+}
+
+.display-produtos{
+    display: flex;
+}
+
+.card-produto{
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #C9C8C5;
+    height: 300px;
+    width: 200px;
+}
+
+.footer-card{
+    display: flex;
+    flex-direction: column;
+}
+
+.infos-card{
+    background-color: #FFDD00;
+    height: 60px;
+    width: 100%;
+}
+
+.nome-produto{
+    color: black;
+    font-size: 18px;
+}
+
+.acoes-card{
+    display: flex;
+    background-color: aquamarine;
+    height: 30px;
+    width: 100%;
+}
+
+.botao-card{
+    background-color: coral;    
+    border: 0.5px solid black;    
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    width: 50%;
+}
+
+.info-botao{
+    color: black;
+    text-decoration: none;
 }
