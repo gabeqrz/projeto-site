@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,12 +46,12 @@
                 <div class="footer-card">
                     <div class="infos-card">
                         <h3 class="nome-produto"></h3> <!-- nome do produto -->
-                        <p class="descricao-produto"></p> <!-- descrição do produ to -->
+                        <p class="descricao-produto"></p> <!-- descrição do produto -->
                         <p class="preco-produto"></p> <!-- preço do produto -->
-                    </div>
+                    </div>    
                     <div class="acoes-card">
-                        <button class="botao-card" type="button"><a class="info-botao" href="#">comprar</a></button> <!-- comprar produto  --> 
-                        <button class="botao-card" type="button"><a class="info-botao" href="#">adicionar</a></button> <!-- adicionar ao carrinho -->
+                        <button class="botao-card" type="button"><a class="info-botao" href="#">comprar <br> agora</a></button>
+                        <button class="botao-card" type="button"><a class="info-botao" href="#">adicionar ao <br> carrinho</a></button>     
                     </div>
                 </div>
             </article>
@@ -78,27 +78,36 @@
             </article>
         </section>
     </main>
-
+    <hr>
     <footer>
-        <p>RAW <br> FOODSTORE</p>
-        <h2>receba nossas novidades</h2>
-        <p>inscreva-se e receba primeiro nossos lançamentos e promoções</p>
+        <p class="logo-footer">RAW <br> FOODSTORE</p>
 
-        <form action="">
-            <label for="nome">seu nome</label>
-            <input type="text" name="" id="nome">
-            <label for="email">seu email</label>
-            <input type="email" name="" id="email">
+        <hr>
+
+        <h2 class="newsletter-convite">receba nossas novidades!</h2>
+        <p class="newsletter-inscricao">inscreva-se e receba primeiro nossos lançamentos e promoções:</p>
+
+        <form class="formulario-estrutura" action="">
+            <label class="formulario-newsletter" for="nome">seu nome:</label>
+            <input class="formulario-campo" type="text" name="" id="nome">
+            <label class="formulario-newsletter" for="email">seu email:</label>
+            <input class="formulario-campo" type="email" name="" id="email">
+            <button class="botao-envio" type="submit">enviar</button>
         </form>
         
-        <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">conheça nossa equipe</a></li>
-            <li><a href="#">trabalhe conosco</a></li>
+        <hr>
+
+        <ul class="infos-footer">
+            <li><a class="itens-infos" href="#">FAQ</a></li>
+            <li><a class="itens-infos" href="#">conheça nossa equipe</a></li>
+            <li><a class="itens-infos" href="#">trabalhe conosco</a></li>
         </ul>
 
-        <p>RAW FOODSTORE</p>
-        <p>feito por GQ | ©2026 - todos os direitos reservados</p>
+        <hr>
+        <section class="footer-border">
+        <p class="footer-logo">RAW FOODSTORE</p>
+        <p class="footer-copyright">feito por GQ | ©2026 - todos os direitos reservados</p>
+        </section>
     </footer>
 </body>
 </html>
