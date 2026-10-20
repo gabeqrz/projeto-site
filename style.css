@@ -1,6 +1,11 @@
 body{
     font-family: "Anton", sans-serif;
     font-weight: 400;
+    font-synthesis: none;
+}
+
+h1, h2, h3{     
+    font-weight: 400; 
 }
 
 hr{
@@ -16,50 +21,79 @@ button{
     color: inherit;
     border: none;
     padding: 0;
-    font: inherit;
+    font-family: inherit;
     cursor: pointer;
-    outline: inherit;
+}
+
+:root{
+    --amarelo: #FFDD00;
+    --papel: #ECEAE7;
+    --cinza: #ebebeb;
+    --preto: #000;
+    --borda: #6a6a6a;
+    --fonte-texto: "Inter", system-ui, sans-serif;
+}
+
+:focus-visible{
+    outline: 3px solid var(--preto);
+    outline-offset: 2px;
+}
+
+.item-menu-list:is(:hover, :focus-visible),
+.item-menu-button:is(:hover, :focus-visible),
+.item-categorias:is(:hover, :focus-visible),
+.item-categorias-button:is(:hover, :focus-visible),
+.botao-card:is(:hover, :focus-visible),
+.botao-envio:is(:hover, :focus-visible){
+    color: var(--amarelo);
+    background-color: var(--preto);
+}
+
+.item-menu-list,
+.item-menu-button,
+.item-categorias,
+.item-categorias-button{
+    display: flex;
+    align-items: center;
+    min-height: 3rem;
+    padding: 10px 22px;
+    font-size: 1.125rem;
+    color: var(--preto);
+    text-decoration: none;
+    border: 1px solid var(--borda);
+    transition: background-color .15s, color .15s;
+}
+
+.descricao-produto,
+.newsletter-inscricao,
+.formulario-campo,
+.footer-copyright{
+    font-family: var(--fonte-texto);
+}
+
+.titulo-principal,
+.logo-footer{
+    font-size: clamp(2.5rem, 9vw, 4.4rem);
+    line-height: 1;
+    letter-spacing: -0.03em;
+    background-color: var(--papel);
 }
 
 .titulo-principal{
-    font-size: 70px;
-    letter-spacing: -2px;
-    line-height: 75px;
     padding: 10px 5px 20px;
-    background-color: #ECEAE7;
 }
 
 .menu-list{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
     align-items: center;
     padding: 5px;
     margin: 0;
-}
-
-.item-menu-list, .item-menu-button{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    font-size: 18px;
-    color: black;
-    border: 0.5px solid #6a6a6a;
-    padding: 10px 22px;
-}
-
-.item-menu-list:hover{
-    color: #FFDD00;
-    background-color: black;
+    gap: 10px;
 }
 
 .item-menu-button img{
-    height: 18px;
-}
-
-.item-menu-button:hover{
-    color: #FFDD00;
-    background-color: black;
+    height: 1.125rem;
 }
 
 .menu-banner{
@@ -67,15 +101,15 @@ button{
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 18px;
-    background-color: #FFDD00;
+    font-size: 1.125rem;
+    background-color: var(--amarelo);
     min-height: 30px;
     padding: 5px;
 }
 
 .frase-comprar{
-    font-size: 40px;
-    background-color: #ECEAE7;
+    font-size: 2.5rem;
+    background-color: var(--papel);
     padding: 15px 5px;
 }
 
@@ -85,72 +119,56 @@ button{
     align-items: center;  
     padding: 5px;
     margin: 0;
-}
-
-.item-categorias, .item-categorias-button{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: black;
-    border: 0.5px solid black; 
-    font-size: 18px;
-    padding: 8px 22px;
-}
-
-.item-categorias:hover, .item-categorias-button:hover{
-    color: #FFDD00;
-    background-color: black;
+    gap: 10px;
 }
 
 .display-produtos{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    padding: 5px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 20px;
+    padding: 20px 10px;
 }
 
 .card-produto{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 400px;
-    width: 230px;
-    margin: 10px 10px;
 }
 
 .imagem-card{
     display: block;
     width: 100%;
+    height: auto;
     aspect-ratio: 1 / 1;
     object-fit: cover;
 }
 
 .footer-card{
+    flex: 1;
     display: flex;
     flex-direction: column;
-    border: 0.5px solid black;
-    height: 165px;
+    border: 1px solid var(--borda);
 }
 
 .infos-card{
+    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 5px;
+    gap: 8px; 
+    padding: 8px;
 }
 
 .nome-produto{
-    display: flex;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .descricao-produto{
-    font-size: 12px;
+    flex: 1;
+    font-size: 0.875rem;
+    line-height: 1.5;
 }
 
 .preco-produto{
-    font-size: 14px;
+    font-size: 1.25rem;
 }
 
 .acoes-card{
@@ -163,38 +181,33 @@ button{
     justify-content: center;
     text-align: center;
     text-decoration: none; 
-    font-size: 14px;
-    color: black;
-    border: 0.5px solid black; 
-    background-color: #ebebeb;
+    font-size: 0.875rem;
+    color: var(--preto);
+    border: none;
+    border-top: 1px solid var(--borda); 
+    background-color: var(--cinza);
     margin: 0;
     padding: 5px;
-    width: 50%;
-    min-height: 35px;
+    flex: 1;
+    min-height: 3rem;
 }
 
-.botao-card:hover{ 
-    color: #FFDD00;
-    background-color: black;
+.botao-card + .botao-card{
+    border-left: 1px solid var(--borda);
 }
 
 .logo-footer{
-    font-size: 60px;
-    letter-spacing: -4px;
-    line-height: 50px;
     padding: 20px 5px;
-    background-color: #ECEAE7;
 }
 
 .newsletter-convite{
-    font-size: 20px;
-    font-weight: bold;
-    padding: 10px 5px 15px 5px;
+    font-size: 1.25rem;
+    padding: 5px;
 }
 
 .newsletter-inscricao{
-    font-size: 20px;
-    padding: 0 5px 5px 5px;
+    font-size: 1.25rem;
+    padding: 5px;
 }
 
 .formulario-estrutura{
@@ -202,63 +215,64 @@ button{
     flex-direction: column;
     width: 100%;
     max-width: 300px;
-    padding: 5px 5px 5px 5px;
+    padding: 5px;
 }
 
 .formulario-newsletter{
-    font-size: 20px;
-    font-weight: bold;
-    padding: 5px 5px 10px 5px;
+    font-size: 1.25rem;
+    padding: 5px;
 }
 
 .formulario-campo{
     margin-bottom: 20px;
-    padding: 5px;
+    padding: 8px;
+    font-family: var(--fonte-texto);
+    font-size: 1rem;
+    border: 1px solid var(--borda);
 }
+
 
 .botao-envio{
     width: 100px;
     padding: 5px;
-    background-color: #ebebeb;
+    background-color: var(--cinza);
     margin-bottom: 20px;
-}
-
-.botao-envio:hover{
-    color: #FFDD00;
-    background-color: black;
-    font-weight: bold;
-    margin-bottom: 20px;
+    border: 1px solid var(--borda);
+    font-size: 1.25rem;
 }
 
 .infos-footer{
     display: flex;
     flex-direction: column;
-    padding: 5px 5px 10px 5px;
-    background-color: #ECEAE7;
+    padding: 5px;
+    background-color: var(--papel);
     
 }
 
 .itens-infos{
-    color: black;
+    color: var(--preto);
     text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 30px;
+    font-size: 1.25rem;
+    line-height: 1.8;
 }
+
+.itens-infos:is(:hover, :focus-visible){    
+    text-decoration: underline; }
 
 .footer-border{
     display: flex;
     flex-direction: column;
     align-items: center;
-    line-height: 25px;
+    line-height: 1.4;
+    padding: 15px 5px;
+    text-align: center;
 }
 
 .footer-logo{
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
+    color: var(--preto);
+    font-size: 1.25rem;
 }
 
 .footer-copyright{
-    font-size: 18px;
+    font-size: 1.125rem;
 }
