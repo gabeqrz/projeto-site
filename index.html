@@ -3,14 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>raw foodstore | delícias vegetarianas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <title>raw foodstore</title>
+    
+    
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
-        <h1>RAW FOODSTORE <br> DELÍCIAS <br> VEGETARIANAS</h1>
+        <h1 class="titulo-principal">RAW FOODSTORE <br> DELÍCIAS <br> VEGETARIANAS</h1>
+        
         <nav class="menu-nav">
             <ul class="menu-list">
                 <li><a class="item-menu-list" href="#">INÍCIO</a></li>
@@ -18,12 +26,23 @@
                 <li><a class="item-menu-list" href="#">COMBOS</a></li>
                 <li><a class="item-menu-list" href="#">SOBRE</a></li>
                 <li><a class="item-menu-list" href="contato.html">CONTATO</a></li>
-                <li><button class="item-menu-button" type="button"><a href="#"><img src="./img/search-icon.png" alt="botão de busca"></a></button></li>
-                <li><button class="item-menu-button" type="button"><a href="#"><img src="./img/cart-icon.png" alt="botão de carrinho de compras"></a></button></li>
+                <li>
+                    <button class="item-menu-button" type="button">
+                        <img src="./img/search-icon.png" alt="botão de busca">
+                    </button>
+                </li>
+                <li>
+                    <button class="item-menu-button" type="button">
+                        <img src="./img/cart-icon.png" alt="botão de carrinho de compras">
+                    </button>
+                </li>
             </ul>
-            <p class="menu-banner">frete grátis em pedidos a partir de R$ 200,00 - entrega em todo o Brasil</p>
         </nav>
+
+        <p class="menu-banner">frete grátis em pedidos a partir de R$ 200,00 - entrega em todo o Brasil</p>
+        
     </header>
+
     <main>
         <section class="menu-categorias">
             <h2 class="frase-comprar">COMPRE</h2>
@@ -35,11 +54,13 @@
                     <li><a class="item-categorias" href="#">SOPAS</a></li>
                     <li><a class="item-categorias" href="#">COMBINADOS</a></li>
                     <li><a class="item-categorias" href="#">GOURMET</a></li>
-                    <li><a href="#"></a></li>
-                    <li><a class="item-categorias" href="#">FILTRAR</a></li>
+                    <li>
+                        <button class="item-categorias-button" type="button">FILTRAR</button>
+                    </li>
                 </ul>
             </nav>
         </section>
+
         <section class="display-produtos">
 
             <article class="card-produto">
@@ -51,8 +72,8 @@
                         <p class="preco-produto">R$ 24,90</p> <!-- preço do produto -->
                     </div>    
                     <div class="acoes-card">
-                        <button class="botao-card" type="button"><a class="info-botao" href="#">comprar <br> agora</a></button>
-                        <button class="botao-card" type="button"><a class="info-botao" href="#">adicionar ao <br> carrinho</a></button>     
+                        <a class="botao-card" href="#">comprar <br> agora</a>
+                        <button class="botao-card" type="button">adicionar ao <br> carrinho</button>     
                     </div>
                 </div>
             </article>
@@ -66,8 +87,8 @@
                         <p class="preco-produto">R$ 26,50</p> <!-- preço do produto -->
                     </div>    
                     <div class="acoes-card">
-                        <button class="botao-card" type="button"><a class="info-botao" href="#">comprar <br> agora</a></button>
-                        <button class="botao-card" type="button"><a class="info-botao" href="#">adicionar ao <br> carrinho</a></button>     
+                        <a class="botao-card" href="#">comprar <br> agora</a>
+                        <button class="botao-card" type="button">adicionar ao <br> carrinho</button>     
                     </div>
                 </div>
             </article>
@@ -81,8 +102,8 @@
                         <p class="preco-produto">R$ 23,00</p> <!-- preço do produto -->
                     </div>    
                     <div class="acoes-card">
-                        <button class="botao-card" type="button"><a class="info-botao" href="#">comprar <br> agora</a></button>
-                        <button class="botao-card" type="button"><a class="info-botao" href="#">adicionar ao <br> carrinho</a></button>     
+                        <a class="botao-card" href="#">comprar <br> agora</a>
+                        <button class="botao-card" type="button">adicionar ao <br> carrinho</button>    
                     </div>
                 </div>
             </article>
@@ -96,8 +117,8 @@
                         <p class="preco-produto">R$ 21,90</p> <!-- preço do produto -->
                     </div>    
                     <div class="acoes-card">
-                        <button class="botao-card" type="button"><a class="info-botao" href="#">comprar <br> agora</a></button>
-                        <button class="botao-card" type="button"><a class="info-botao" href="#">adicionar ao <br> carrinho</a></button>     
+                        <a class="botao-card" href="#">comprar <br> agora</a>
+                        <button class="botao-card" type="button">adicionar ao <br> carrinho</button>   
                     </div>
                 </div>
             </article>
@@ -111,8 +132,8 @@
                         <p class="preco-produto">R$ 25,00</p> <!-- preço do produto -->
                     </div>    
                     <div class="acoes-card">
-                        <button class="botao-card" type="button"><a class="info-botao" href="#">comprar <br> agora</a></button>
-                        <button class="botao-card" type="button"><a class="info-botao" href="#">adicionar ao <br> carrinho</a></button>     
+                       <a class="botao-card" href="#">comprar <br> agora</a>
+                       <button class="botao-card" type="button">adicionar ao <br> carrinho</button>    
                     </div>
                 </div>
             </article>
@@ -126,8 +147,8 @@
                         <p class="preco-produto">R$ 24,50</p> <!-- preço do produto -->
                     </div>    
                     <div class="acoes-card">
-                        <button class="botao-card" type="button"><a class="info-botao" href="#">comprar <br> agora</a></button>
-                        <button class="botao-card" type="button"><a class="info-botao" href="#">adicionar ao <br> carrinho</a></button>     
+                        <a class="botao-card" href="#">comprar <br> agora</a>
+                        <button class="botao-card" type="button">adicionar ao <br> carrinho</button>    
                     </div>
                 </div>
             </article>
@@ -141,8 +162,8 @@
                         <p class="preco-produto">R$ 28,00</p> <!-- preço do produto -->
                     </div>    
                     <div class="acoes-card">
-                        <button class="botao-card" type="button"><a class="info-botao" href="#">comprar <br> agora</a></button>
-                        <button class="botao-card" type="button"><a class="info-botao" href="#">adicionar ao <br> carrinho</a></button>     
+                        <a class="botao-card" href="#">comprar <br> agora</a>
+                        <button class="botao-card" type="button">adicionar ao <br> carrinho</button>     
                     </div>
                 </div>
             </article>
@@ -156,8 +177,8 @@
                         <p class="preco-produto">R$ 27,00</p> <!-- preço do produto -->
                     </div>    
                     <div class="acoes-card">
-                        <button class="botao-card" type="button"><a class="info-botao" href="#">comprar <br> agora</a></button>
-                        <button class="botao-card" type="button"><a class="info-botao" href="#">adicionar ao <br> carrinho</a></button>     
+                        <a class="botao-card" href="#">comprar <br> agora</a>
+                        <button class="botao-card" type="button">adicionar ao <br> carrinho</button>    
                     </div>
                 </div>
             </article>
@@ -171,45 +192,56 @@
                         <p class="preco-produto">R$ 22,50</p> <!-- preço do produto -->
                     </div>    
                     <div class="acoes-card">
-                        <button class="botao-card" type="button"><a class="info-botao" href="#">comprar <br> agora</a></button>
-                        <button class="botao-card" type="button"><a class="info-botao" href="#">adicionar ao <br> carrinho</a></button>     
+                        <a class="botao-card" href="#">comprar <br> agora</a>
+                        <button class="botao-card" type="button">adicionar ao <br> carrinho</button>    
                     </div>
                 </div>
             </article>
 
         </section>
     </main>
+
     <hr>
+
     <footer>
         <p class="logo-footer">RAW <br> FOODSTORE</p>
 
         <hr>
 
-        <h2 class="newsletter-convite">receba nossas novidades!</h2>
-        <p class="newsletter-inscricao">inscreva-se e receba primeiro nossos lançamentos e promoções:</p>
+        <section class="newsletter">
 
-        <form class="formulario-estrutura" action="">
-            <label class="formulario-newsletter" for="nome">seu nome:</label>
-            <input class="formulario-campo" type="text" name="" id="nome">
-            <label class="formulario-newsletter" for="email">seu email:</label>
-            <input class="formulario-campo" type="email" name="" id="email">
-            <button class="botao-envio" type="submit">enviar</button>
-        </form>
+            <h2 class="newsletter-convite">receba nossas novidades!</h2>
+            <p class="newsletter-inscricao">inscreva-se e receba primeiro nossos lançamentos e promoções:</p>
+
+            <form class="formulario-estrutura" action="#">
+                <label class="formulario-newsletter" for="nome">seu nome:</label>
+                <input class="formulario-campo" type="text" name="nome" id="nome">
+            
+                <label class="formulario-newsletter" for="email">seu email:</label>
+                <input class="formulario-campo" type="email" name="email" id="email">
+                
+                <button class="botao-envio" type="submit">enviar</button>
+            </form>
+
+        </section>
         
         <hr>
 
-        <ul class="infos-footer">
-            <li><a class="itens-infos" href="#">FAQ</a></li>
-            <li><a class="itens-infos" href="#">conheça nossa equipe</a></li>
-            <li><a class="itens-infos" href="#">trabalhe conosco</a></li>
-        </ul>
+        <section class="institucional">
+            <ul class="infos-footer">
+                <li><a class="itens-infos" href="#">FAQ</a></li>
+                <li><a class="itens-infos" href="#">conheça nossa equipe</a></li>
+                <li><a class="itens-infos" href="#">trabalhe conosco</a></li>
+            </ul>
+
+        </section>
 
         <hr>
 
-        <section class="footer-border">
-        <p class="footer-logo">RAW FOODSTORE</p>
-        <p class="footer-copyright">feito por GQ | ©2026 - todos os direitos reservados</p>
-        </section>
+        <div class="footer-border">
+            <p class="footer-logo">RAW FOODSTORE</p>
+            <p class="footer-copyright">feito por GQ | ©2026 - todos os direitos reservados</p>
+        </div>
     </footer>
 </body>
 </html>

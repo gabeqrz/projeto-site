@@ -1,14 +1,6 @@
 body{
-    font-family: Anton,sans-serif;
-}
-
-h1{
-    font-size: 80px;
-    font-weight: bold;
-    letter-spacing: -4px;
-    line-height: 75px;
-    padding: 5px 5px 20px 5px;
-    background-color: #ECEAE7;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
 }
 
 hr{
@@ -16,35 +8,44 @@ hr{
 }
 
 main{
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
-.menu-nav{
-    display: flex;
-    flex-direction: column;
-    
+button{
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.titulo-principal{
+    font-size: 70px;
+    letter-spacing: -2px;
+    line-height: 75px;
+    padding: 10px 5px 20px;
+    background-color: #ECEAE7;
 }
 
 .menu-list{
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: baseline;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     align-items: center;
-    width: 100%;
-    padding: 5px 0;
+    padding: 5px;
     margin: 0;
-    gap: 30px;
 }
 
-.item-menu-list{
+.item-menu-list, .item-menu-button{
     display: flex;
-    text-decoration: none;
     align-items: center;
+    text-decoration: none;
     font-size: 18px;
     color: black;
-    border: 0.5px solid #C9C8C5;
-    height: 20px;
-    padding: 6px 22px;
+    border: 0.5px solid #6a6a6a;
+    padding: 10px 22px;
 }
 
 .item-menu-list:hover{
@@ -52,17 +53,8 @@ main{
     background-color: black;
 }
 
-.item-menu-button{
-    display: flex;
-    gap: 10px;
-    border: none;
-    margin: 0;
-    padding: 0;
-    width: auto;
-    overflow: visible;
-    background: transparent;
-    border: 0.5px solid #C9C8C5;
-    padding: 6.8px 38px;
+.item-menu-button img{
+    height: 18px;
 }
 
 .item-menu-button:hover{
@@ -72,56 +64,40 @@ main{
 
 .menu-banner{
     display: flex;
-    font-size: 18px;
-    font-weight: bold;
-    border: 0.5px solid transparent;
-    background-color: #FFDD00;
-    text-align: center;
     justify-content: center;
     align-items: center;
-    height: 30px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #FFDD00;
+    min-height: 30px;
     padding: 5px;
-}
-
-.menu-categorias{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 0;
-    margin: 0;
 }
 
 .frase-comprar{
     font-size: 40px;
     background-color: #ECEAE7;
-    font-weight: bold;
     padding: 15px 5px;
 }
 
 .lista-categorias{
     display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items: center;
-    width: 100%;
-    height: 40px;
-    padding: 10px 0 5px 0;
+    flex-wrap: wrap;
+    align-items: center;  
+    padding: 5px;
     margin: 0;
 }
 
-.item-categorias{
+.item-categorias, .item-categorias-button{
     display: flex;
-    flex-wrap: nowrap;
+    align-items: center;
     text-decoration: none;
     color: black;
-    border: 0.5px solid black;
-    align-items: center;
+    border: 0.5px solid black; 
     font-size: 18px;
-    height: 20px;
-    padding: 15px;
+    padding: 8px 22px;
 }
 
-.item-categorias:hover{
+.item-categorias:hover, .item-categorias-button:hover{
     color: #FFDD00;
     background-color: black;
 }
@@ -131,10 +107,7 @@ main{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    min-height: 100px;
-    height: auto;
     padding: 5px 0;
-    overflow:inherit;
 }
 
 .card-produto{
@@ -146,93 +119,70 @@ main{
     margin: 10px 10px;
 }
 
+.imagem-card{
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
 .footer-card{
     display: flex;
     flex-direction: column;
-    justify-content: end;
     border: 0.5px solid black;
-    background-color: transparent;
     height: 165px;
 }
 
 .infos-card{
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-    background-color: transparent;
-    height: 165px;
     justify-content: space-between;
-    margin: 2px;
+    padding: 5px;
 }
 
 .nome-produto{
     display: flex;
-    color: black;
     font-size: 14px;
-    font-weight: bold;
-    height: 30px;
-    align-items: center;
 }
 
 .descricao-produto{
-    display: flex;
     font-size: 12px;
-    height: 50px;
-    align-items: center;
 }
 
 .preco-produto{
-    display: flex;
     font-size: 14px;
-    font-weight: bold;
-    height: 20px;
-    align-items: center;
 }
 
 .acoes-card{
     display: flex;
-    height: 40px;
 }
 
 .botao-card{
     display: flex;
-    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none; 
+    font-size: 14px;
+    color: black;
     border: 0.5px solid black; 
-    color: black;   
+    background-color: #ebebeb;
     margin: 0;
     padding: 5px;
-    height: 100%;
     width: 50%;
-
+    min-height: 35px;
 }
 
 .botao-card:hover{ 
     color: #FFDD00;
     background-color: black;
-    font-weight: bold;
-}
-
-.info-botao{
-    color: black;
-    text-decoration: none;
-    justify-content: center;
-    font-size: 14px;
-    width: 100%;
-}
-
-.info-botao:hover{
-    color: #FFDD00;
-    background-color: black;
-    font-weight: bold;
 }
 
 .logo-footer{
     font-size: 60px;
-    font-weight: bold;
     letter-spacing: -4px;
     line-height: 50px;
-    padding: 20px 5px 20px 5px;
+    padding: 20px 5px;
     background-color: #ECEAE7;
 }
 
