@@ -25,7 +25,7 @@
                 <li><a class="item-menu-list" href="#">PRODUTOS</a></li>
                 <li><a class="item-menu-list" href="#">COMBOS</a></li>
                 <li><a class="item-menu-list" href="#">SOBRE</a></li>
-                <li><a class="item-menu-list" href="contato.html">CONTATO</a></li>
+                <li><a class="item-menu-list" href="#">CONTATO</a></li>
                 <li>
                     <button class="item-menu-button" type="button" aria-label="Buscar produtos">
                         <img src="./img/search-icon.png" alt="">
@@ -44,155 +44,114 @@
     </header>
 
     <main>
-        <section class="menu-categorias" aria-labelledby="titulo-compre">
-            <h2 class="frase-comprar" id="titulo-compre">COMPRE</h2>
-            <nav class="categorias-de-produtos" aria-label="Categorias de produtos">
-                <ul class="lista-categorias">
-                    <li><a class="item-categorias" href="#">TODOS</a></li>
-                    <li><a class="item-categorias" href="#">LOW-CARB</a></li>
-                    <li><a class="item-categorias" href="#">MASSAS</a></li>
-                    <li><a class="item-categorias" href="#">SOPAS</a></li>
-                    <li><a class="item-categorias" href="#">COMBINADOS</a></li>
-                    <li><a class="item-categorias" href="#">GOURMET</a></li>
-                    <li>
-                        <button class="item-categorias-button" type="button">FILTRAR</button>
-                    </li>
-                </ul>
-            </nav>
-        </section>
-
-        <section class="display-produtos">
-
-            <article class="card-produto">
-                <img class="imagem-card" src="./img/escondidinho-de-mandioca-com-shimeji-e-legumes.jpg" alt="Escondidinho de Mandioca com Shimeji e Legumes" width="300" height="300" loading="lazy"> 
-                <div class="footer-card">
-                    <div class="infos-card">
-                        <h3 class="nome-produto">Escondidinho de Mandioca com Shimeji e Legumes</h3>
-                        <p class="descricao-produto">Purê cremoso de mandioca (aipim) feito com azeite de oliva, recheado com cogumelos shimeji refogados, cenoura em cubos e abobrinha. Levemente gratinado.</p>
-                        <p class="preco-produto">R$ 24,90</p> 
-                    </div>    
-                    <div class="acoes-card">
-                        <a class="botao-card" href="#" aria-label="Comprar agora: Escondidinho de Mandioca">comprar agora</a>
-                        <button class="botao-card" type="button" aria-label="Adicionar ao carrinho: Escondidinho de Mandioca">adicionar ao carrinho</button>     
+       <main id="conteudo">
+        <nav class="migalhas" aria-label="Você está em">
+            <ol>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html">Produtos</a></li>
+                <li aria-current="page">Escondidinho de Mandioca</li>
+            </ol>
+        </nav>
+ 
+        <article class="produto-detalhe">
+            <img class="produto-imagem" src="./img/escondidinho-de-mandioca-com-shimeji-e-legumes.jpg" alt="Escondidinho de Mandioca com Shimeji e Legumes" width="600" height="600">
+ 
+            <div class="produto-info">
+                <h1 class="produto-nome">Escondidinho de Mandioca com Shimeji e Legumes</h1>
+                <p class="produto-preco">R$ 24,90</p>
+                <p class="produto-descricao">Purê cremoso de mandioca (aipim) feito com azeite de oliva, recheado com cogumelos shimeji refogados, cenoura em cubos e abobrinha. Levemente gratinado.</p>
+ 
+                <form class="produto-form" action="#" method="post">
+                    <label class="formulario-newsletter" for="quantidade">quantidade:</label>
+                    <input class="formulario-campo produto-quantidade" type="number" id="quantidade" name="quantidade" min="1" max="20" value="1">
+ 
+                    <div class="produto-acoes">
+                        <a class="botao-card" href="#">comprar agora</a>
+                        <button class="botao-card" type="submit">adicionar ao carrinho</button>
                     </div>
-                </div>
-            </article>
+                </form>
+ 
+                <p class="produto-frete">Frete grátis em pedidos a partir de R$ 200,00.</p>
+ 
+                <!-- <details> abre e fecha sem JavaScript -->
+                <details class="produto-detalhes">
+                    <summary>ingredientes</summary>
+                    <!-- Complete com a lista oficial do produto -->
+                    <p>Mandioca, azeite de oliva, cogumelo shimeji, cenoura e abobrinha.</p>
+                </details>
+ 
+                <details class="produto-detalhes">
+                    <summary>conservação e preparo</summary>
+                    <!-- Preencha com as informações reais -->
+                    <p>Informações de conservação, validade e modo de preparo.</p>
+                </details>
+ 
+                <details class="produto-detalhes">
+                    <summary>entrega</summary>
+                    <!-- Preencha com prazos e regras reais -->
+                    <p>Prazos e regras de entrega para todo o Brasil.</p>
+                </details>
 
-            <article class="card-produto">
-                <img class="imagem-card" src="./img/lasanha-de-berinjela-a-bolonhesa-vegetariana.jpg" alt="Lasanha de Berinjela à Bolonhesa Vegetariana" width="300" height="300" loading="lazy"> 
-                <div class="footer-card">
-                    <div class="infos-card">
-                        <h3 class="nome-produto">Lasanha de Berinjela à Bolonhesa Vegetariana</h3>
-                        <p class="descricao-produto">Finas lâminas de berinjela intercaladas com molho de tomate caseiro, proteína de soja texturizada temperada com ervas finas e requeijão cremoso zero lactose.</p>
-                        <p class="preco-produto">R$ 26,50</p>
-                    </div>    
-                    <div class="acoes-card">
-                        <a class="botao-card" href="#" aria-label="Comprar agora: Lasanha de Berinjela à Bolonhesa Vegetariana">comprar agora</a>
-                        <button class="botao-card" type="button" aria-label="Adicionar ao carrinho: Lasanha de Berinjela à Bolonhesa Vegetariana">adicionar ao carrinho</button>     
-                    </div>
-                </div>
-            </article>
-
-            <article class="card-produto">
-                <img class="imagem-card" src="./img/nhoque-de-batata-doce-ao-sugo-com-grao-de-bico.jpg" alt="Nhoque de Batata-Doce ao Sugo com Grão-de-Bico" width="300" height="300" loading="lazy">
-                    <div class="infos-card">
-                        <h3 class="nome-produto">Nhoque de Batata-Doce ao Sugo com Grão-de-Bico</h3>
-                        <p class="descricao-produto">Massa artesanal de batata-doce, leve e sem glúten, acompanhada por um rico molho de tomate rústico e grão-de-bico tostado com páprica defumada.</p> 
-                        <p class="preco-produto">R$ 23,00</p>
-                    </div>    
-                    <div class="acoes-card">
-                        <a class="botao-card" href="#" aria-label="Comprar agora: Nhoque de Batata-Doce ao Sugo com Grão-de-Bico">comprar agora</a>
-                        <button class="botao-card" type="button" aria-label="Adicionar ao carrinho: Nhoque de Batata-Doce ao Sugo com Grão-de-Bico">adicionar ao carrinho</button>    
-                    </div>
-                </div>
-            </article>
-
-            <article class="card-produto">
-                <img class="imagem-card" src="./img/fradinho-com-abobora-e-brocolis-baiao-de-dois-do-bem.jpg" alt="Fradinho com Abóbora e Brócolis (Baião de Dois do Bem)" width="300" height="300" loading="lazy"> 
-                    <div class="infos-card">
-                        <h3 class="nome-produto">Fradinho com Abóbora e Brócolis (Baião de Dois do Bem)</h3>
-                        <p class="descricao-produto">Mix de arroz integral e feijão-fradinho temperado com cominho e coentro, servido com cubos de abóbora assada e floretes de brócolis ao alho.</p> 
-                        <p class="preco-produto">R$ 21,90</p>
-                    </div>    
-                    <div class="acoes-card">
-                        <a class="botao-card" href="#"  aria-label="Comprar agora: Fradinho com Abóbora e Brócolis (Baião de Dois do Bem)">comprar agora</a>
-                        <button class="botao-card" type="button" aria-label="Adicionar ao carrinho: Fradinho com Abóbora e Brócolis (Baião de Dois do Bem)">adicionar ao carrinho</button>   
-                    </div>
-                </div>
-            </article>
-
-            <article class="card-produto">
-                <img class="imagem-card" src="./img/curry-indiano-de-grao-de-bico-e-batata.jpg" alt="Curry Indiano de Grão-de-Bico e Batata" width="300" height="300" loading="lazy"> 
-                <div class="footer-card">
-                    <div class="infos-card">
-                        <h3 class="nome-produto">Curry Indiano de Grão-de-Bico e Batata</h3>
-                        <p class="descricao-produto">Um clássico reconfortante! Grão-de-bico e batatas cozidos em um molho aromático à base de curry, leite de coco e gengibre, acompanhado de arroz basmati soltinho.</p> 
-                        <p class="preco-produto">R$ 25,00</p>
-                    </div>    
-                    <div class="acoes-card">
-                       <a class="botao-card" href="#" aria-label="Comprar agora: Curry Indiano de Grão-de-Bico e Batata">comprar agora</a>
-                       <button class="botao-card" type="button" aria-label="Adicionar ao carrinho: Curry Indiano de Grão-de-Bico e Batata">adicionar ao carrinho</button>    
-                    </div>
-                </div>
-            </article>
-
-            <article class="card-produto">
-                <img class="imagem-card" src="./img/almondegas-de-lentilha-com-pure-de-mandioquinha.jpg" alt="Almôndegas de Lentilha com Purê de Mandioquinha" width="300" height="300" loading="lazy"> 
-                <div class="footer-card">
-                    <div class="infos-card">
-                        <h3 class="nome-produto">Almôndegas de Lentilha com Purê de Mandioquinha</h3>
-                        <p class="descricao-produto">Almôndegas suculentas feitas à base de lentilha e aveia, assadas e banhadas ao molho de tomate, acompanhadas de purê cremoso de mandioquinha (batata-baroa).</p> 
-                        <p class="preco-produto">R$ 24,50</p> 
-                    </div>    
-                    <div class="acoes-card">
-                        <a class="botao-card" href="#" aria-label="Comprar agora: Almôndegas de Lentilha com Purê de Mandioquinha">comprar agora</a>
-                        <button class="botao-card" type="button" aria-label="Adicionar ao carrinho: Almôndegas de Lentilha com Purê de Mandioquinha">adicionar ao carrinho</button>    
-                    </div>
-                </div>
-            </article>
-
-            <article class="card-produto">
-                <img class="imagem-card" src="./img/risoto-integral-de-cogumelos-com-alho-poro.jpg" alt="Risoto Integral de Cogumelos com Alho-Poró" width="300" height="300" loading="lazy"> 
-                    <div class="infos-card">
-                        <h3 class="nome-produto">Risoto Integral de Cogumelos com Alho-Poró</h3>
-                        <p class="descricao-produto">Arroz arbóreo integral preparado com caldo vegetal caseiro, mix de cogumelos frescos (Paris e Shimeji) salteados e rodelas crocantes de alho-poró.</p> 
-                        <p class="preco-produto">R$ 28,00</p>
-                    </div>    
-                    <div class="acoes-card">
-                        <a class="botao-card" href="#" aria-label="Comprar agora: Risoto Integral de Cogumelos com Alho-Poró">comprar agora</a>
-                        <button class="botao-card" type="button" aria-label="Adicionar ao carrinho: Risoto Integral de Cogumelos com Alho-Poró">adicionar ao carrinho</button>     
-                    </div>
-                </div>
-            </article>
-
-            <article class="card-produto">
-                <img class="imagem-card" src="./img/strogonoff-de-palmito-pupunha-e-champignon.jpg" alt="Strogonoff de Palmito Pupunha e Champignon" width="300" height="300" loading="lazy"> 
-                        <h3 class="nome-produto">Strogonoff de Palmito Pupunha e Champignon</h3>
-                        <p class="descricao-produto">Fatias de palmito pupunha fresco e cogumelos champignon em um molho cremoso de castanhas de caju com extrato de tomate. Acompanha arroz integral e batata palha artesanal (separada).</p> 
-                        <p class="preco-produto">R$ 27,00</p>
-                    </div>    
-                    <div class="acoes-card">
-                        <a class="botao-card" href="#" aria-label="Comprar agora: Strogonoff de Palmito Pupunha e Champignon">comprar agora</a>
-                        <button class="botao-card" type="button" aria-label="Adicionar ao carrinho: Strogonoff de Palmito Pupunha e Champignon">adicionar ao carrinho</button>    
-                    </div>
-                </div>
-            </article>
-
-            <article class="card-produto">
-                <img class="imagem-card" src="./img/panqueca-integral-de-espinafre-com-ricota-e-ervas.jpg" alt="Panqueca Integral de Espinafre com Ricota e Ervas" width="300" height="300" loading="lazy">
-                <div class="footer-card">
-                    <div class="infos-card">
-                        <h3 class="nome-produto">Panqueca Integral de Espinafre com Ricota e Ervas</h3>
-                        <p class="descricao-produto">Massa leve de espinafre recheada com creme de ricota fresca, cenoura ralada e salsinha, coberta com molho sugo natural.</p>
-                        <p class="preco-produto">R$ 22,50</p>
-                    </div>    
-                    <div class="acoes-card">
-                        <a class="botao-card" href="#" aria-label="Comprar agora: Panqueca Integral de Espinafre com Ricota e Ervas">comprar agora</a>
-                        <button class="botao-card" type="button" aria-label="Adicionar ao carrinho: Panqueca Integral de Espinafre com Ricota e Ervas">adicionar ao carrinho</button>    
-                    </div>
-                </div>
-            </article>
-
+                <table class="tabela-nutricional">
+                    <caption>Informação Nutricional</caption>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Porção: 350g (1 unidade)</th>
+                        </tr>
+                        <tr>
+                            <th>Quantidade por porção</th>
+                            <th>%VD*</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Valor Energético</strong> 410 kcal</td>
+                            <td>21%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Carboidratos</strong> 62g</td>
+                            <td>21%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Proteínas</strong> 9g</td>
+                            <td>12%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Gorduras Totais</strong> 13g</td>
+                            <td>24%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Gorduras Saturadas</strong> 2g</td>
+                            <td>9%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Gorduras Trans</strong> 0g</td>
+                            <td>**</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Fibra Alimentar</strong> 7g</td>
+                            <td>28%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sódio</strong> 520mg</td>
+                            <td>22%</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">
+                                *_% Valores Diários baseados em uma dieta de 2.000 kcal. <br>
+                                \*\*_Valor Diário não estabelecido._
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </article>
+ 
+        <section class="produtos-relacionados" aria-labelledby="titulo-relacionados">
+            <h2 class="frase-comprar" id="titulo-relacionados">VEJA TAMBÉM</h2>
+            <!-- Reutilize aqui 3 ou 4 cards (.card-produto) copiados da página inicial, dentro de um <div class="display-produtos"> -->
         </section>
     </main>
 
