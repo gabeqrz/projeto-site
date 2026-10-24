@@ -92,8 +92,21 @@ button{
     gap: 10px;
 }
 
+.item-menu-button{
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+
 .item-menu-button img{
-    height: 1.125rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.icone-hover{
+    opacity: 0;
 }
 
 .menu-banner{
@@ -203,11 +216,13 @@ button{
 .newsletter-convite{
     font-size: 1.25rem;
     padding: 5px;
+    margin: 20px 0 10px;
 }
 
 .newsletter-inscricao{
     font-size: 1.25rem;
     padding: 5px;
+    margin: 0 0 10px;
 }
 
 .formulario-estrutura{
