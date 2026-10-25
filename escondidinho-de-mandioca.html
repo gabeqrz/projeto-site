@@ -12,7 +12,10 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="./img/favicon.ico" sizes="32x32">
+    <link rel="apple-touch-icon" href="./img/apple-touch-icon.png">
 </head>
 <body>
     <header>
@@ -20,19 +23,21 @@
         
         <nav class="menu-nav" aria-label="Principal">
             <ul class="menu-list">
-                <li><a class="item-menu-list" href="#">INÍCIO</a></li>
-                <li><a class="item-menu-list" href="#">PRODUTOS</a></li>
-                <li><a class="item-menu-list" href="#">COMBOS</a></li>
-                <li><a class="item-menu-list" href="#">SOBRE</a></li>
-                <li><a class="item-menu-list" href="#">CONTATO</a></li>
+                <li><a class="item-menu-list" href="index.html">INÍCIO</a></li>
+                <li><a class="item-menu-list" href="index.html#produtos">PRODUTOS</a></li>
+                <li><a class="item-menu-list" href="index.html#sobre">SOBRE</a></li>
+                <li><a class="item-menu-list" href="index.html#contato">CONTATO</a></li>
+                <li><a class="item-menu-list" href="index.html#saiba-mais">SAIBA MAIS</a></li>
                 <li>
-                    <button class="item-menu-button" type="button" aria-label="Buscar produtos">
-                        <img src="./img/search-icon.png" alt="">
+                    <button class="item-menu-button" type="button" title="em breve" aria-label="Buscar produtos">
+                        <img class="icone-padrao" src="./img/search-icon.png" alt="">
+                        <img class="icone-hover" src="./img/search-icon-hover.png" alt="">
                     </button>
                 </li>
                 <li>
-                    <button class="item-menu-button" type="button" aria-label="Ver carrinho de compras">
-                        <img src="./img/cart-icon.png" alt="">
+                    <button class="item-menu-button" type="button" title="em breve" aria-label="Ver carrinho de compras">
+                        <img class="icone-padrao" src="./img/cart-icon.png" alt="">
+                        <img class="icone-hover" src="./img/cart-icon-hover.png" alt="">
                     </button>
                 </li>
             </ul>
@@ -43,6 +48,23 @@
     </header>
 
     <main>
+        <section class="menu-categorias" id="produtos" aria-labelledby="titulo-compre">
+            <h2 class="frase-comprar" id="titulo-compre">COMPRE</h2>
+            <nav class="categorias-de-produtos" aria-label="Categorias de produtos">
+                <ul class="lista-categorias">
+                    <li><a class="item-categorias" href="#">TODOS</a></li>
+                    <li><a class="item-categorias" href="#">LOW-CARB</a></li>
+                    <li><a class="item-categorias" href="#">MASSAS</a></li>
+                    <li><a class="item-categorias" href="#">SOPAS</a></li>
+                    <li><a class="item-categorias" href="#">COMBINADOS</a></li>
+                    <li><a class="item-categorias" href="#">GOURMET</a></li>
+                    <li>
+                        <button class="item-categorias-button" type="button">FILTRAR</button>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
         <main id="conteudo">
             
         <article class="produto-detalhe">
@@ -67,82 +89,59 @@
  
                 <details class="produto-detalhes">
                     <summary>ingredientes</summary>
-                    <!-- Complete com a lista oficial do produto -->
                     <p>Mandioca, azeite de oliva, cogumelo shimeji, cenoura e abobrinha.</p>
                 </details>
  
                 <details class="produto-detalhes">
                     <summary>conservação e preparo</summary>
-                    <!-- Preencha com as informações reais -->
-                    <p>Informações de conservação, validade e modo de preparo.</p>
+
+                    <div class="detalhes-conteudo">
+                        <h2>Conservação e validade</h2>
+                        <dl class="produto-dados">
+                            <div>
+                                <dt>No freezer (-18&nbsp;°C ou mais frio)</dt>
+                                <dd>Válido por até 90 dias a partir da data de fabricação.</dd>
+                            </div>
+                            <div>
+                                <dt>No refrigerador (0&nbsp;°C a 4&nbsp;°C)</dt>
+                                <dd>Consumir em até 24 horas após descongelar.</dd>
+                            </div>
+                        </dl>
+
+                        <h2>Modo de aquecimento</h2>
+                        <p class="produto-aviso">Remova a tampa plástica antes de aquecer.</p>
+
+                        <h3>Micro-ondas</h3>
+                        <dl class="produto-dados">
+                            <div>
+                                <dt>Congelado</dt>
+                                <dd>Potência média por 5 a 7 minutos.</dd>
+                            </div>
+                            <div>
+                                <dt>Descongelado</dt>
+                                <dd>Potência média por 3 a 4 minutos.</dd>
+                            </div>
+                        </dl>
+
+                        <h3>Forno convencional ou airfryer</h3>
+                        <dl class="produto-dados">
+                            <div>
+                                <dt>Temperatura</dt>
+                                <dd>Pré-aqueça a 180&nbsp;°C.</dd>
+                            </div>
+                            <div>
+                                <dt>Tempo</dt>
+                                <dd>Aqueça a marmita sem a tampa por aproximadamente 20 a 25 minutos.</dd>
+                            </div>
+                        </dl>
+                    </div>
                 </details>
  
                 <details class="produto-detalhes">
                     <summary>entrega</summary>
-                    <!-- Preencha com prazos e regras reais -->
                     <p>Prazos e regras de entrega para todo o Brasil.</p>
                 </details>
-
-                <table class="tabela-nutricional">
-                    <caption>Informação Nutricional</caption>
-                    <thead>
-                        <tr>
-                            <th colspan="2">Porção: 350g (1 unidade)</th>
-                        </tr>
-                        <tr>
-                            <th>Quantidade por porção</th>
-                            <th>%VD*</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Valor Energético</strong> 410 kcal</td>
-                            <td>21%</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Carboidratos</strong> 62g</td>
-                            <td>21%</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Proteínas</strong> 9g</td>
-                            <td>12%</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Gorduras Totais</strong> 13g</td>
-                            <td>24%</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Gorduras Saturadas</strong> 2g</td>
-                            <td>9%</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Gorduras Trans</strong> 0g</td>
-                            <td>**</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Fibra Alimentar</strong> 7g</td>
-                            <td>28%</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Sódio</strong> 520mg</td>
-                            <td>22%</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="2">
-                                *_% Valores Diários baseados em uma dieta de 2.000 kcal. <br>
-                                \*\*_Valor Diário não estabelecido._
-                            </td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </div>
-        </article>
- 
-        <section class="produtos-relacionados" aria-labelledby="titulo-relacionados">
-            <h2 class="frase-comprar" id="titulo-relacionados">VEJA TAMBÉM</h2>
-            <!-- Reutilize aqui 3 ou 4 cards (.card-produto) copiados da página inicial, dentro de um <div class="display-produtos"> -->
+            
         </section>
     </main>
 
@@ -153,26 +152,7 @@
 
         <hr>
 
-        <section class="newsletter">
-
-            <h2 class="newsletter-convite">receba nossas novidades!</h2>
-            <p class="newsletter-inscricao">inscreva-se e receba primeiro nossos lançamentos e promoções:</p>
-
-            <form class="formulario-estrutura" action="#">
-                <label class="formulario-newsletter" for="nome">seu nome:</label>
-                <input class="formulario-campo" type="text" name="nome" id="nome" autocomplete="name" required>
-            
-                <label class="formulario-newsletter" for="email">seu email:</label>
-                <input class="formulario-campo" type="email" name="email" id="email" autocomplete="email" required>
-                
-                <button class="botao-envio" type="submit">enviar</button>
-            </form>
-
-        </section>
-        
-        <hr>
-
-        <nav aria-label="Institucional">
+        <nav aria-label="Institucional" id="saiba-mais">
             <ul class="infos-footer">
                 <li><a class="itens-infos" href="#">FAQ</a></li>
                 <li><a class="itens-infos" href="#">conheça nossa equipe</a></li>

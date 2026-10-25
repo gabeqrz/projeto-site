@@ -93,21 +93,31 @@ button{
 }
 
 .item-menu-button{
-    position: relative;
-    display: inline-block;
-    width: 16px;
-    height: 16px;
+    display: grid;
+    place-items: center;
 }
 
 .item-menu-button img{
-    position: absolute;
-    top: 0;
-    left: 0;
+    grid-area: 1 / 1;      /* both images share the same cell */
+    display: block;
+    height: 1.5rem;
+    width: auto;
+    transition: opacity .15s;
 }
 
 .icone-hover{
     opacity: 0;
 }
+
+.item-menu-button:hover .icone-padrao,
+.item-menu-button:focus .icone-padrao{
+    opacity: 0;
+}
+
+.item-menu-button:hover .icone-hover,
+.item-menu-button:focus .icone-hover{
+    opacity: 1;
+}   
 
 .menu-banner{
     display: flex;
@@ -207,6 +217,23 @@ button{
 
 .botao-card + .botao-card{
     border-left: 1px solid var(--borda);
+}
+
+.sobre-conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 65ch;
+    padding: 20px 10px 30px;
+    font-family: var(--fonte-texto);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.sobre-destaque{
+    font-family: var(--fonte-titulo);
+    font-size: clamp(1.250rem, 4vw, 2.25rem);
+    line-height: 1.1;
 }
 
 .logo-footer{
@@ -364,6 +391,16 @@ button{
     line-height: 1.6;
 }
 
+.produto-detalhes h2{
+    font-size: 1.25rem;
+    margin: 20px 0 10px;
+}
+
+.produto-detalhes h3{
+    font-size: 1rem;
+    margin: 16px 0 8px;
+}
+
 .produto-form{
     display: flex;
     flex-direction: column;
@@ -399,6 +436,33 @@ button{
     cursor: pointer;
 }
 .produto-detalhes p{ padding-top: 8px; }
+
+.produto-dados{
+    border: 1px solid var(--borda);
+    margin: 0;
+}
+
+.produto-dados > div{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(160px, 100%), 1fr));
+    gap: 4px 16px;
+    padding: 10px;
+}
+
+.produto-dados > div + div{
+    border-top: 1px solid var(--borda);
+}
+
+.produto-dados dt{
+    font-size: 1rem;
+}
+
+.produto-dados dd{
+    margin: 0;
+    font-family: var(--fonte-texto);
+    font-size: 1rem;
+    line-height: 1.5;
+}
 
 .produtos-relacionados{ margin-top: 30px; }
 

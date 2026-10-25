@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Refeições vegetarianas prontas: massas, sopas, low-carb e combos gourmet. Frete grátis a partir de R$ 200,00.">
+    <title>raw foodstore | delícias vegetarianas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1 class="titulo-principal">RAW FOODSTORE <br> DELÍCIAS <br> VEGETARIANAS</h1>
+        
+        <nav class="menu-nav" aria-label="Principal">
+            <ul class="menu-list">
+                <li><a class="item-menu-list" href="#">INÍCIO</a></li>
+                <li><a class="item-menu-list" href="#">PRODUTOS</a></li>
+                <li><a class="item-menu-list" href="#">COMBOS</a></li>
+                <li><a class="item-menu-list" href="#">SOBRE</a></li>
+                <li><a class="item-menu-list" href="#">CONTATO</a></li>
+                <li>
+                    <button class="item-menu-button" type="button" aria-label="Buscar produtos">
+                        <img src="./img/search-icon.png" alt="">
+                    </button>
+                </li>
+                <li>
+                    <button class="item-menu-button" type="button" aria-label="Ver carrinho de compras">
+                        <img src="./img/cart-icon.png" alt="">
+                    </button>
+                </li>
+            </ul>
+        </nav>
+
+        <p class="menu-banner">frete grátis em pedidos a partir de R$ 200,00 - entrega em todo o Brasil</p>
+        
+    </header>
+
+    <main>
+        <main id="conteudo">
+            
+        <article class="produto-detalhe">
+            <img class="produto-imagem" src="./img/escondidinho-de-mandioca-com-shimeji-e-legumes.jpg" alt="Escondidinho de Mandioca com Shimeji e Legumes" width="600" height="600">
+ 
+            <div class="produto-info">
+                <h1 class="produto-nome">Escondidinho de Mandioca com Shimeji e Legumes</h1>
+                <p class="produto-preco">R$ 24,90</p>
+                <p class="produto-descricao">Purê cremoso de mandioca (aipim) feito com azeite de oliva, recheado com cogumelos shimeji refogados, cenoura em cubos e abobrinha. Levemente gratinado.</p>
+ 
+                <form class="produto-form" action="#" method="post">
+                    <label class="formulario-newsletter" for="quantidade">quantidade:</label>
+                    <input class="formulario-campo produto-quantidade" type="number" id="quantidade" name="quantidade" min="1" max="20" value="1">
+ 
+                    <div class="produto-acoes">
+                        <a class="botao-card" href="#">comprar agora</a>
+                        <button class="botao-card" type="submit">adicionar ao carrinho</button>
+                    </div>
+                </form>
+ 
+                <p class="produto-frete">Frete grátis em pedidos a partir de R$ 200,00.</p>
+ 
+                <details class="produto-detalhes">
+                    <summary>ingredientes</summary>
+                    <!-- Complete com a lista oficial do produto -->
+                    <p>Mandioca, azeite de oliva, cogumelo shimeji, cenoura e abobrinha.</p>
+                </details>
+ 
+                <details class="produto-detalhes">
+                    <summary>conservação e preparo</summary>
+                    <!-- Preencha com as informações reais -->
+                    <p>Informações de conservação, validade e modo de preparo.</p>
+                </details>
+ 
+                <details class="produto-detalhes">
+                    <summary>entrega</summary>
+                    <!-- Preencha com prazos e regras reais -->
+                    <p>Prazos e regras de entrega para todo o Brasil.</p>
+                </details>
+
+                <table class="tabela-nutricional">
+                    <caption>Informação Nutricional</caption>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Porção: 350g (1 unidade)</th>
+                        </tr>
+                        <tr>
+                            <th>Quantidade por porção</th>
+                            <th>%VD*</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Valor Energético</strong> 410 kcal</td>
+                            <td>21%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Carboidratos</strong> 62g</td>
+                            <td>21%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Proteínas</strong> 9g</td>
+                            <td>12%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Gorduras Totais</strong> 13g</td>
+                            <td>24%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Gorduras Saturadas</strong> 2g</td>
+                            <td>9%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Gorduras Trans</strong> 0g</td>
+                            <td>**</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Fibra Alimentar</strong> 7g</td>
+                            <td>28%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sódio</strong> 520mg</td>
+                            <td>22%</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">
+                                *_% Valores Diários baseados em uma dieta de 2.000 kcal. <br>
+                                \*\*_Valor Diário não estabelecido._
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </article>
+ 
+        <section class="produtos-relacionados" aria-labelledby="titulo-relacionados">
+            <h2 class="frase-comprar" id="titulo-relacionados">VEJA TAMBÉM</h2>
+            <!-- Reutilize aqui 3 ou 4 cards (.card-produto) copiados da página inicial, dentro de um <div class="display-produtos"> -->
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p class="logo-footer">RAW <br> FOODSTORE</p>
+
+        <hr>
+
+        <section class="newsletter">
+
+            <h2 class="newsletter-convite">receba nossas novidades!</h2>
+            <p class="newsletter-inscricao">inscreva-se e receba primeiro nossos lançamentos e promoções:</p>
+
+            <form class="formulario-estrutura" action="#">
+                <label class="formulario-newsletter" for="nome">seu nome:</label>
+                <input class="formulario-campo" type="text" name="nome" id="nome" autocomplete="name" required>
+            
+                <label class="formulario-newsletter" for="email">seu email:</label>
+                <input class="formulario-campo" type="email" name="email" id="email" autocomplete="email" required>
+                
+                <button class="botao-envio" type="submit">enviar</button>
+            </form>
+
+        </section>
+        
+        <hr>
+
+        <nav aria-label="Institucional">
+            <ul class="infos-footer">
+                <li><a class="itens-infos" href="#">FAQ</a></li>
+                <li><a class="itens-infos" href="#">conheça nossa equipe</a></li>
+                <li><a class="itens-infos" href="#">trabalhe conosco</a></li>
+            </ul>
+
+        </nav>
+
+        <hr>
+
+        <div class="footer-border">
+            <p class="footer-logo">RAW FOODSTORE</p>
+            <p class="footer-copyright">feito por GQ | ©2026 - todos os direitos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>
