@@ -22,6 +22,16 @@ O projeto foi desenvolvido para praticar os fundamentos do front-end, explorando
 
 O ponto de partida foi o template [Shopify Product Catalog, da Lovable](https://lovable.dev/templates/websites/ecommerce/raw-goods-shopify-storefront), utilizado como referência visual. A interface foi adaptada e implementada com HTML e CSS em um repositório próprio no GitHub, com publicação pelo GitHub Pages.
 
+## Prévia do projeto
+
+### Desktop
+
+[https://gabeqrz.github.io/raw-foodstore/](docs/screenshot-home-desktop.png)
+
+### Mobile
+
+[https://gabeqrz.github.io/raw-foodstore/](docs/screenshot-home-mobile.png)
+
 ## ✨ Funcionalidades implementadas
 
 - **Vitrine de produtos:** apresentação de nove refeições vegetarianas.
