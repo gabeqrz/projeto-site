@@ -56,7 +56,7 @@ raw-foodstore/
 
 ## 🧪 Resultados e validação
 
-Durante o desenvolvimento, foram trabalhados aspectos de semântica HTML, organização do CSS, responsividade e acessibilidade. O HTML foi validado com o **W3C Validator**, sem erros na validação realizada.
+Durante o desenvolvimento, foram trabalhados aspectos de semântica HTML, organização do CSS, responsividade e acessibilidade. O HTML foi validado com o **W3C Validator**, sem erros na validação realizada. A validação pelo Lighthouse ainda está pendente.
 
 O projeto está publicado no GitHub Pages, permitindo visualizar a interface e consultar o código-fonte no repositório.
 
