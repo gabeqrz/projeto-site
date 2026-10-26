@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Refeições vegetarianas prontas: massas, sopas, low-carb e combos gourmet. Frete grátis a partir de R$ 200,00.">
-    <title>raw foodstore | delícias vegetarianas</title>
+    <meta name="description"
+        content="Escondidinho de Mandioca com Shimeji e Legumes: purê cremoso de mandioca recheado com cogumelos, cenoura e abobrinha, levemente gratinado. R$ 24,90.">
+    <title>Escondidinho de Mandioca com Shimeji e Legumes | Raw Foodstore</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    
-    
+
     <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
     <link rel="icon" href="./img/favicon.ico" sizes="32x32">
     <link rel="apple-touch-icon" href="./img/apple-touch-icon.png">
 </head>
+
 <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
     <header>
-        <h1 class="titulo-principal">RAW FOODSTORE <br> DELÍCIAS <br> VEGETARIANAS</h1>
-        
+        <p class="titulo-principal"><a href="index.html">RAW FOODSTORE <br> DELÍCIAS <br> VEGETARIANAS </a></p>
+
         <nav class="menu-nav" aria-label="Principal">
             <ul class="menu-list">
                 <li><a class="item-menu-list" href="index.html">INÍCIO</a></li>
@@ -35,7 +40,8 @@
                     </button>
                 </li>
                 <li>
-                    <button class="item-menu-button" type="button" title="em breve" aria-label="Ver carrinho de compras">
+                    <button class="item-menu-button" type="button" title="em breve"
+                        aria-label="Ver carrinho de compras">
                         <img class="icone-padrao" src="./img/cart-icon.png" alt="">
                         <img class="icone-hover" src="./img/cart-icon-hover.png" alt="">
                     </button>
@@ -44,54 +50,40 @@
         </nav>
 
         <p class="menu-banner">frete grátis em pedidos a partir de R$ 200,00 - entrega em todo o Brasil</p>
-        
+
     </header>
 
-    <main>
-        <section class="menu-categorias" id="produtos" aria-labelledby="titulo-compre">
-            <h2 class="frase-comprar" id="titulo-compre">COMPRE</h2>
-            <nav class="categorias-de-produtos" aria-label="Categorias de produtos">
-                <ul class="lista-categorias">
-                    <li><a class="item-categorias" href="#">TODOS</a></li>
-                    <li><a class="item-categorias" href="#">LOW-CARB</a></li>
-                    <li><a class="item-categorias" href="#">MASSAS</a></li>
-                    <li><a class="item-categorias" href="#">SOPAS</a></li>
-                    <li><a class="item-categorias" href="#">COMBINADOS</a></li>
-                    <li><a class="item-categorias" href="#">GOURMET</a></li>
-                    <li>
-                        <button class="item-categorias-button" type="button">FILTRAR</button>
-                    </li>
-                </ul>
-            </nav>
-        </section>
+    <main id="conteudo">
+        <a class="voltar" href="index.html#produtos">← voltar aos produtos</a>
 
-        <main id="conteudo">
-            
         <article class="produto-detalhe">
-            <img class="produto-imagem" src="./img/escondidinho-de-mandioca-com-shimeji-e-legumes.jpg" alt="Escondidinho de Mandioca com Shimeji e Legumes" width="600" height="600">
- 
+            <img class="produto-imagem" src="./img/escondidinho-de-mandioca-com-shimeji-e-legumes.jpg"
+                alt="Escondidinho de Mandioca com Shimeji e Legumes" width="600" height="600">
+
             <div class="produto-info">
                 <h1 class="produto-nome">Escondidinho de Mandioca com Shimeji e Legumes</h1>
                 <p class="produto-preco">R$ 24,90</p>
-                <p class="produto-descricao">Purê cremoso de mandioca (aipim) feito com azeite de oliva, recheado com cogumelos shimeji refogados, cenoura em cubos e abobrinha. Levemente gratinado.</p>
- 
-                <form class="produto-form" action="#" method="post">
+                <p class="produto-descricao">Purê cremoso de mandioca (aipim) feito com azeite de oliva, recheado com
+                    cogumelos shimeji refogados, cenoura em cubos e abobrinha. Levemente gratinado.</p>
+
+                <div class="produto-form">
                     <label class="formulario-newsletter" for="quantidade">quantidade:</label>
-                    <input class="formulario-campo produto-quantidade" type="number" id="quantidade" name="quantidade" min="1" max="20" value="1">
- 
+                    <input class="formulario-campo produto-quantidade" type="number" id="quantidade" name="quantidade"
+                        min="1" max="20" value="1">
+
                     <div class="produto-acoes">
                         <a class="botao-card" href="#">comprar agora</a>
-                        <button class="botao-card" type="submit">adicionar ao carrinho</button>
+                        <button class="botao-card" type="button" title="em breve">adicionar ao carrinho</button>
                     </div>
-                </form>
- 
+                </div>
+
                 <p class="produto-frete">Frete grátis em pedidos a partir de R$ 200,00.</p>
- 
+
                 <details class="produto-detalhes">
                     <summary>ingredientes</summary>
                     <p>Mandioca, azeite de oliva, cogumelo shimeji, cenoura e abobrinha.</p>
                 </details>
- 
+
                 <details class="produto-detalhes">
                     <summary>conservação e preparo</summary>
 
@@ -136,77 +128,82 @@
                         </dl>
                     </div>
                 </details>
- 
+
                 <details class="produto-detalhes">
                     <summary>entrega</summary>
                     <p>Prazos e regras de entrega para todo o Brasil.</p>
                 </details>
 
-                <table class="tabela-nutricional">
-                    <caption>Informação nutricional</caption>
-                    <thead>
-                        <tr>
-                            <td class="porcao" colspan="3">Porção: 350&nbsp;g (1 unidade)</td>
-                        </tr>
-                        <tr>
-                            <th scope="col">Nutriente</th>
-                            <th scope="col">Quantidade</th>
-                            <th scope="col">%VD*</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">Valor energético</th>
-                            <td>410&nbsp;kcal</td>
-                            <td>21%</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Carboidratos</th>
-                            <td>62&nbsp;g</td>
-                            <td>21%</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Proteínas</th>
-                            <td>9&nbsp;g</td>
-                            <td>12%</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Gorduras totais</th>
-                            <td>13&nbsp;g</td>
-                            <td>24%</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="subitem">Gorduras saturadas</th>
-                            <td>2&nbsp;g</td>
-                            <td>9%</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="subitem">Gorduras trans</th>
-                            <td>0&nbsp;g</td>
-                            <td>**</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Fibra alimentar</th>
-                            <td>7&nbsp;g</td>
-                            <td>28%</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Sódio</th>
-                            <td>520&nbsp;mg</td>
-                            <td>26%</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="3">
-                                <p>* % Valores diários baseados em uma dieta de 2.000&nbsp;kcal.</p>
-                                <p>** Valor diário não estabelecido.</p>
-                            </td>
-                        </tr>
-                    </tfoot>
-                </table>
-            
-        </section>
+                <details class="produto-detalhes">
+                    <summary>informação nutricional</summary>
+                    <div class="detalhes-conteudo">
+                        <table class="tabela-nutricional">
+                            <caption>Informação nutricional</caption>
+                            <thead>
+                                <tr>
+                                    <td class="porcao" colspan="3">Porção: 350&nbsp;g (1 unidade)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">Nutriente</th>
+                                    <th scope="col">Quantidade</th>
+                                    <th scope="col">%VD*</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Valor energético</th>
+                                    <td>410&nbsp;kcal</td>
+                                    <td>21%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Carboidratos</th>
+                                    <td>62&nbsp;g</td>
+                                    <td>21%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Proteínas</th>
+                                    <td>9&nbsp;g</td>
+                                    <td>12%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Gorduras totais</th>
+                                    <td>13&nbsp;g</td>
+                                    <td>24%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="subitem">Gorduras saturadas</th>
+                                    <td>2&nbsp;g</td>
+                                    <td>9%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="subitem">Gorduras trans</th>
+                                    <td>0&nbsp;g</td>
+                                    <td>**</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Fibra alimentar</th>
+                                    <td>7&nbsp;g</td>
+                                    <td>28%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Sódio</th>
+                                    <td>520&nbsp;mg</td>
+                                    <td>26%</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="3">
+                                        <p>* % Valores diários baseados em uma dieta de 2.000&nbsp;kcal.</p>
+                                        <p>** Valor diário não estabelecido.</p>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </details>
+            </div>
+        </article>
     </main>
 
     <hr>
@@ -233,4 +230,5 @@
         </div>
     </footer>
 </body>
+
 </html>

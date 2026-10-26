@@ -1,5 +1,15 @@
+:root{
+    --amarelo: #FFDD00;
+    --papel: #ECEAE7;
+    --cinza: #ebebeb;
+    --preto: #000;
+    --borda: #6a6a6a;
+    --fonte-titulo: "Anton", sans-serif;
+    --fonte-texto: "Inter", system-ui, sans-serif;
+}
+
 body{
-    font-family: "Anton", sans-serif;
+    font-family: var(--fonte-titulo);
     font-weight: 400;
     font-synthesis: none;
 }
@@ -25,14 +35,6 @@ button{
     cursor: pointer;
 }
 
-:root{
-    --amarelo: #FFDD00;
-    --papel: #ECEAE7;
-    --cinza: #ebebeb;
-    --preto: #000;
-    --borda: #6a6a6a;
-    --fonte-texto: "Inter", system-ui, sans-serif;
-}
 
 :focus-visible{
     outline: 3px solid var(--preto);
@@ -92,6 +94,11 @@ button{
     gap: 10px;
 }
 
+.item-menu-list[aria-current="page"]{
+    background-color: var(--preto);
+    color: var(--amarelo);
+}
+
 .item-menu-button{
     display: grid;
     place-items: center;
@@ -109,15 +116,13 @@ button{
     opacity: 0;
 }
 
-.item-menu-button:hover .icone-padrao,
-.item-menu-button:focus .icone-padrao{
+.item-menu-button:is(:hover, :focus-visible) .icone-padrao{
     opacity: 0;
 }
 
-.item-menu-button:hover .icone-hover,
-.item-menu-button:focus .icone-hover{
+.item-menu-button:is(:hover, :focus-visible) .icone-hover{
     opacity: 1;
-}   
+}
 
 .menu-banner{
     display: flex;
@@ -336,24 +341,9 @@ button{
 }
 .skip-link:focus{ top: 8px; }
 
-.migalhas{
-    padding: 10px;
-    font-family: var(--fonte-texto);
-    font-size: 0.875rem;
+.detalhes-conteudo{
+    padding-top: 8px;
 }
-.migalhas ol{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-.migalhas li + li::before{
-    content: "/";
-    margin-right: 8px;
-}
-.migalhas a{ color: var(--preto); }
 
 .produto-detalhe{
     display: grid;
@@ -399,6 +389,12 @@ button{
 .produto-detalhes h3{
     font-size: 1rem;
     margin: 16px 0 8px;
+}
+
+.produto-detalhes .produto-aviso{
+    padding: 10px;
+    background-color: var(--amarelo);
+    color: var(--preto);
 }
 
 .produto-form{
@@ -464,7 +460,6 @@ button{
     line-height: 1.5;
 }
 
-.produtos-relacionados{ margin-top: 30px; }
 
 /* ---------- Tabela nutricional ---------- */
 .tabela-nutricional{
@@ -544,6 +539,8 @@ button{
 .tabela-nutricional tfoot p{
     margin: 0;
     padding: 0;
+    font-size: inherit;
+    line-height: inherit;
 }
 
 .tabela-nutricional tfoot p + p{
