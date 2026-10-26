@@ -25,12 +25,10 @@ O ponto de partida foi o template [Shopify Product Catalog, da Lovable](https://
 ## Prévia do projeto
 
 ### Desktop
-
-[https://gabeqrz.github.io/raw-foodstore/](docs/screenshot-home-desktop.png)
+<img src="docs/screenshot-home-desktop.png" alt="Screenshot Home Desktop" width="100%">
 
 ### Mobile
-
-[https://gabeqrz.github.io/raw-foodstore/](docs/screenshot-home-mobile.png)
+<img src="docs/screenshot-home-mobile.png" alt="Screenshot Home Mobile" width="300px">
 
 ## ✨ Funcionalidades implementadas
 
