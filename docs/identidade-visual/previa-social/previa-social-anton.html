@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Prévia social | Raw Foodstore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <style>
+        :root{ --amarelo:#FFDD00; --preto:#000; --papel:#ECEAE7; --margem:64px; --zona-central:640px; }
+        *{ box-sizing:border-box; margin:0; padding:0; }
+        body{ background:#333; }
+
+        #previa{
+            position:relative;
+            width:1280px; height:640px;
+            background:var(--preto);
+            font-family:"Anton", sans-serif;
+            overflow:hidden;
+        }
+
+        /* Todo o conteudo fica na zona central (640px) e a 64px das bordas de cima e de baixo */
+        .centro{
+            position:absolute; left:50%; top:var(--margem);
+            width:var(--zona-central); height:416px;
+            transform:translateX(-50%);
+            display:flex; flex-direction:column; align-items:center; justify-content:center;
+            gap:28px;
+        }
+        .linha{ display:flex; align-items:center; gap:28px; }
+        .logo{ width:156px; height:156px; background:var(--amarelo); flex:none; }
+        .logo svg{ width:100%; height:100%; display:block; }
+        .titulo{ font-size:90px; line-height:1; letter-spacing:-.01em; color:var(--amarelo); }
+        .subtitulo{ font-size:33px; letter-spacing:.06em; color:var(--papel); }
+        .chips{ display:flex; gap:12px; }
+        .chips span{
+            border:3px solid var(--amarelo); color:var(--amarelo);
+            font-size:23px; letter-spacing:.06em; padding:8px 16px;
+        }
+
+        /* A faixa pode ir de ponta a ponta (e so um fundo); o texto fica na zona central */
+        .faixa{
+            position:absolute; left:0; top:504px;
+            width:100%; height:72px;
+            background:var(--amarelo); color:var(--preto);
+            display:flex; align-items:center; justify-content:center;
+            font-size:31px; letter-spacing:.05em;
+        }
+
+        /* Guias opcionais: troque display:none por block */
+        .guia{ display:none; position:absolute; top:var(--margem); bottom:var(--margem); }
+        .guia.margem{ left:var(--margem); right:var(--margem); border:2px dashed #f0f; }
+        .guia.central{ left:50%; width:var(--zona-central); transform:translateX(-50%); border:2px dashed #0df; }
+    </style>
+</head>
+<body>
+    <!-- Para exportar: botão direito em #previa no DevTools > "Capture node screenshot" -->
+    <div id="previa">
+        <div class="centro">
+            <div class="linha">
+                <div class="logo">
+                    <svg viewBox="0 0 64 64" aria-hidden="true">
+                        <g transform="translate(15.5 7.8) scale(1.1)" fill-rule="evenodd">
+                            <path d="M0 0H19Q29 0 29 10V14Q29 21 22.5 23.5L30 44H19L15 24H10V44H0Z M10 8H17Q19 8 19 10V14Q19 16 17 16H10Z"/>
+                        </g>
+                    </svg>
+                </div>
+                <h1 class="titulo">RAW<br>FOODSTORE</h1>
+            </div>
+            <p class="subtitulo">DELÍCIAS VEGETARIANAS</p>
+            <div class="chips"><span>HTML5</span><span>CSS3</span><span>FRONT-END</span></div>
+        </div>
+
+        <p class="faixa">MARMITAS VEGETARIANAS CONGELADAS</p>
+
+        <div class="guia margem"></div>
+        <div class="guia central"></div>
+    </div>
+</body>
+</html>

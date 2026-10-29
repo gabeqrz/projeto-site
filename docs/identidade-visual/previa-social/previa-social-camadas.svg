@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="1280" height="640" viewBox="0 0 1280 640">
+  <title>Raw Foodstore - previa social (1280 x 640) - margem de 64 px e zona central de 640 px</title>
+
+  <g id="fundo" inkscape:groupmode="layer" inkscape:label="Fundo">
+    <rect width="1280" height="640" fill="#000000"/>
+  </g>
+
+  <g id="logo" inkscape:groupmode="layer" inkscape:label="Logo (quadrado + R)">
+    <rect x="335.2" y="129.0" width="156" height="156" fill="#FFDD00"/>
+    <path transform="translate(335.2 129.0) scale(2.4375) translate(15.5 7.8) scale(1.1)" fill="#000000" fill-rule="evenodd" d="M0 0H19Q29 0 29 10V14Q29 21 22.5 23.5L30 44H19L15 24H10V44H0Z M10 8H17Q19 8 19 10V14Q19 16 17 16H10Z"/>
+  </g>
+
+  <g id="titulo" inkscape:groupmode="layer" inkscape:label="Titulo" font-family="Anton, Impact, 'Arial Narrow', sans-serif" font-size="90" fill="#FFDD00" letter-spacing="-0.9">
+    <text x="519.2" y="199.0">RAW</text>
+    <text x="519.2" y="285.0">FOODSTORE</text>
+  </g>
+
+  <g id="subtitulo" inkscape:groupmode="layer" inkscape:label="Subtitulo" font-family="Anton, Impact, 'Arial Narrow', sans-serif" font-size="33" fill="#ECEAE7" letter-spacing="2" text-anchor="middle">
+    <text x="640" y="341.0">DELÍCIAS VEGETARIANAS</text>
+  </g>
+
+  <g id="etiquetas" inkscape:groupmode="layer" inkscape:label="Etiquetas" font-family="Anton, Impact, 'Arial Narrow', sans-serif" font-size="23" fill="#FFDD00" letter-spacing="1.2" text-anchor="middle">
+    <rect x="468.0" y="370.5" width="93.5" height="43.0" fill="none" stroke="#FFDD00" stroke-width="3"/>
+    <text x="514.8" y="401.0">HTML5</text>
+    <rect x="576.5" y="370.5" width="77.0" height="43.0" fill="none" stroke="#FFDD00" stroke-width="3"/>
+    <text x="615.0" y="401.0">CSS3</text>
+    <rect x="668.5" y="370.5" width="143.5" height="43.0" fill="none" stroke="#FFDD00" stroke-width="3"/>
+    <text x="740.2" y="401.0">FRONT-END</text>
+  </g>
+
+  <g id="faixa" inkscape:groupmode="layer" inkscape:label="Faixa inferior">
+    <rect x="0" y="504" width="1280" height="72" fill="#FFDD00"/>
+    <text x="640" y="552.0" font-family="Anton, Impact, 'Arial Narrow', sans-serif" font-size="31" fill="#000000" letter-spacing="1.2" text-anchor="middle">MARMITAS VEGETARIANAS CONGELADAS</text>
+  </g>
+
+  <!-- Guias: remova display="none" para ver. Magenta = margem de 64 px; ciano = zona central de 640 px.
+       Texto e logo devem ficar dentro das duas (so a faixa amarela pode sangrar ate as laterais). -->
+  <g id="guia" inkscape:groupmode="layer" inkscape:label="Guia - margem 64 e zona central 640" display="none">
+    <rect x="64" y="64" width="1152" height="512" fill="none" stroke="#FF00FF" stroke-width="2" stroke-dasharray="8 6"/>
+    <rect x="320" y="64" width="640" height="512" fill="none" stroke="#00DCFF" stroke-width="2" stroke-dasharray="8 6"/>
+  </g>
+</svg>
